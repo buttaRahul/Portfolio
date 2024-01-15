@@ -1,0 +1,117 @@
+
+
+
+
+
+.customTabs .customTabs_item{
+    padding: 0 !important;
+    min-width: 0 !important;
+    margin-right: 20px !important;
+    text-transform: inherit !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    /* margin-top: 20px; */
+    /* padding-top: -40px; */
+    
+}
+
+.customTabs .active {
+    color: var(--main-color) !important;
+  
+}
+
+
+
+.customCard {
+    height: 100%;
+    min-width: 350px;
+    max-width: 350px;
+    /* box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.48) !important; */
+    border-radius: 5px;
+    overflow: hidden;
+    /* height: ; */
+
+}
+
+
+
+
+
+.customCard .customCard_image {
+    /* height: 120px; */
+    /* width:400px ; */
+    
+    object-fit: contain !important;
+
+
+}
+
+
+.customCard .customCard_title {
+    font-weight: 600 !important;
+    padding: 20px;
+}
+
+
+.customCard .customCard_caption {
+    color: white !important;
+    font-weight: 300;
+    padding: 20px;
+}
+
+.customCard .customCard_tag{
+    /* border: 5px solid black !important; */
+    background-color: var(--main-color);
+    /* border: 10px;
+     */
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+
+}
+
+.customCard .customCard_tags{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.projectDialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    height: 100vh; 
+    overflow-y: auto;  
+    margin: 0 auto;  
+}
+.projectDialog  .projectDialog_image{
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center !important;
+}
+.projectDialog  .projectDialog_description{
+
+   margin-top: 10px !important;
+}
+.projectDialog .projectDialog_actions {
+    justify-content: center !important;
+    margin-bottom: 10px;
+
+}
+.projectDialog .projectDialog_icon {
+    color: darkslategray;
+    margin: 0px 12px;
+    cursor: pointer;
+}
+
+.projectDialog .projectDialog_icon :hover{
+    color: var(--main-color);
+}
+
+
+.projectDialog_icon > .MuiSvgIcon-root{
+    font-size: 30px !important;
+}
