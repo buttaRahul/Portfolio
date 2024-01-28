@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav, Navbar } from 'react-bootstrap';
 // import { Link, NavLink } from 'react-router-dom';
@@ -11,10 +11,13 @@ import './header.css'
 
 const Header = (props) => {
 
-  // const pathName = props.location.pathname
-  // const pathName = useLocation().pathname
-  // const pathName = props?.location?.pathname;
   const pathName = useLocation().pathname;
+  const scrollToContact = () => {
+    const contactElement = document.getElementById('contact');
+    if (contactElement) {
+      contactElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <Navbar expand="lg" sticky="top" className="header">
       <Nav.Link as={NavLink} to='/' className='header_navlink'>
@@ -40,7 +43,7 @@ const Header = (props) => {
             
                
         </Box>
-            <CustomButton text={'Hire Me'} icon={<Telegram/>}/>
+            <CustomButton text={'Contact Me'} icon={<Telegram/>} onClick={scrollToContact} />
       </Navbar.Collapse>
     </Navbar>
       

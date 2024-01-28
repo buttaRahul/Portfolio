@@ -13,7 +13,6 @@ import MuiAlert from '@mui/material/Alert';
 
 import { TimelineContent, TimelineDot, TimelineItem } from '@mui/lab'
 import CustomButton from '../../components/Button/CustomButton'
-import { json } from 'react-router-dom'
 
 
 
@@ -201,7 +200,7 @@ const Resume = () => {
       <Grid container spacing={6} className='section pt_45 pb_45'>
 
         <Grid item xs={12} lg={7}>
-          <Grid container>
+          <Grid container id = 'contact'>
             <Grid item className='section_title mb_30'>
               <span></span>
               <h6 className='txt'>Contact Me</h6>
@@ -226,7 +225,7 @@ const Resume = () => {
           </Grid>
         </Grid>
         <Grid item xs={12} lg={5}>
-          <Grid container>
+          <Grid container className='contactInfo'>
             <Grid item className='section_title mb_30'>
               <span></span>
               <h6 className='txt'>Contact Information</h6>

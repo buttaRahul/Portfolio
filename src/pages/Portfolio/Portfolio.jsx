@@ -65,7 +65,7 @@ const Portfolio = () => {
       </Grid>
 
       <Grid item xs={12}>
-        <Grid container gap={3}>
+        <Grid container gap={7}>
           {resumeData.projects.map((prj) => (
             <Box key={prj.title}>
               {tabvalue == prj.tag || tabvalue == 'All' ? (
@@ -127,9 +127,9 @@ const Portfolio = () => {
                               {/* <Typography variant='body2' className='customCard_caption'>{prj.caption}</Typography> */}
                               <Box className='customCard_tags'>
                               {
-                                prj.tech.map((item) => (
+                                prj.tech.map((item,i) => (
                                   
-                                    <Box className='customCard_tag'>
+                                    <Box className='customCard_tag' key={i}>
                                       <Typography variant='body2' >{item}</Typography>
                                     </Box>
 

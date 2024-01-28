@@ -2,8 +2,9 @@
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import React from 'react';
-// import GitHubIcon from '@mui/icons-material/GitHub';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import { FaKaggle } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
 
 
 
@@ -28,6 +29,17 @@ export default {
             text: 'buttaRahul',
             icon: React.createElement(GitHubIcon)
         },
+        Kaggle: {
+            link: 'https://www.kaggle.com/adityarahul',
+            text: 'aditya_Rahul',
+            icon: React.createElement(FaKaggle)
+        },
+        LeetCode : {
+            link : 'https://leetcode.com/aditya_Rahul/',
+            text : 'aditya_rahul',
+            icon: React.createElement(SiLeetcode)
+
+        }
     },
 
     about: "I am a passionate developer with a curiosity for development and Machine Learning! I find joy in creating websites, applications, and I love to learn new things and build cool stuff. I am a fast learner, I'm always looking to make the development process and code better. I enjoy finding simple and elegant solutions for every problem.",
@@ -99,8 +111,8 @@ export default {
             tag: 'Web Apps',
             image: '../assets/images/crypto.png',
             title: 'Cryptocurrency Tracker',
-            description: 'A Web application for real-time tracking of cryptocurrencies. Users can track the value of cryptocurrencies in real time, allowing them to make informed decisions about buying, selling, or holding assets. Implemented Using ReactJs, Materail UI and ReactchartJS.',
-            tech: ["ReactJs","Materail UI", "ReactchartJS"],
+            description: 'A Web application for real-time tracking of cryptocurrencies. Users can track the value of cryptocurrencies in real time, allowing them to make informed decisions about buying, selling, or holding assets. Implemented Using ReactJs, Material UI and ReactchartJS.',
+            tech: ["ReactJs","Material UI", "ReactchartJS"],
             links: [
 
                 { link: 'https://github.com/buttaRahul/react-crypto-tracker', icon: React.createElement(GitHubIcon) },
@@ -112,7 +124,7 @@ export default {
             tag: 'Web Apps',
             image: '../assets/images/cal.png',
             title: 'Emi Calculator',
-            description: 'Created a calculator application that helps you to calculate the EMI, monthly interest, and monthly reducing balance based on principal amount, loan tenure, and interest rate. Implemented using React.js and Timeline Component from Materail UI',
+            description: 'Created a calculator application that helps you to calculate the EMI, monthly interest, and monthly reducing balance based on principal amount, loan tenure, and interest rate. Implemented using React.js and Timeline Component from Material UI',
             tech:["ReactJS","Material Ui"],
             links: [
 
@@ -125,9 +137,9 @@ export default {
             tag: 'Web Apps',
             image: '../assets/images/todo.png',
             title: 'Todo Application',
-            description: 'Created a Todo list app that helps you keep track of your daily tasks using Django, ReactJS and Material UI',
+            description: 'Created a full-stack Todo list app that helps you keep track of your daily tasks using Django, ReactJS and Material UI',
             // tech:"Django, ReactJS, Material Ui",
-            tech: ["Django","ReactJS","Materail UI"],
+            tech: ["Django","ReactJS","Material UI"],
             links: [
 
                 { link: 'https://github.com/buttaRahul/full_stack_django_rest_react/tree/main/todo', icon: React.createElement(GitHubIcon) },
@@ -151,7 +163,7 @@ export default {
         {
             tag: 'Web Apps',
             image: '../assets/images/monitor.png',
-            title: 'Applinace Moniter',
+            title: 'Applinace Monitor',
             description: 'Appliance Monitor to check the up-time of various appliances. Implemented using ReactJS',
             tech:["ReactJS"],
             links: [
@@ -198,6 +210,33 @@ export default {
 
                 { link: 'https://github.com/buttaRahul/task_management', icon: React.createElement(GitHubIcon) },
                 // { link: 'https://buttarahul.github.io/currency-converter//', icon: React.createElement(PlayArrowIcon) },
+
+            ]
+        },
+
+        {
+            tag: 'Web Apps',
+            image: '../assets/images/chatbot.png',
+            title: "AI ChatBot",
+            description: "AI ChatBot Implemented using React.js, Chakra UI and OpenAi Api",
+            tech: ["React.js", "Chakra UI"],
+            links: [
+
+                { link: 'https://github.com/buttaRahul/chatbot-react', icon: React.createElement(GitHubIcon) },
+                { link: 'https://reactchat-bot.netlify.app/', icon: React.createElement(PlayArrowIcon) },
+
+            ]
+        },
+        {
+            tag: 'Web Apps',
+            image: '../assets/images/tunes.png',
+            title: "Favorite Tunes",
+            description: "A Django application that allows users to add and display their favourite songs and the artists who perform them",
+            tech: ["Python", "Django"],
+            links: [
+
+                { link: 'https://github.com/buttaRahul/FavoriteTunes', icon: React.createElement(GitHubIcon) },
+                // { link: 'https://reactchat-bot.netlify.app/', icon: React.createElement(PlayArrowIcon) },
 
             ]
         },
@@ -268,19 +307,7 @@ export default {
 
             ]
         },
-        {
-            tag: 'ML/Data Science',
-            image: '../assets/images/road.png',
-            title: 'Road Sign Detection',
-            description: 'A Deep learning model to detect road signs. Implemented using ultralytics, openCv and YOLOv8',
-            tech:["ultralytics", "openCv", "YOLOv8"],
-            links: [
-
-                { link: 'https://colab.research.google.com/drive/1vhLn8Q0Bd6Bnmf5IEkuZEqwF_kbG8YLe?usp=sharing', icon: React.createElement(GitHubIcon) },
-                // { link: 'https://buttarahul.github.io/currency-converter//', icon: React.createElement(PlayArrowIcon) },
-
-            ]
-        },
+        
         {
             tag: 'ML/Data Science',
             image: '../assets/images/noble.png',
@@ -320,6 +347,60 @@ export default {
 
             ]
         },
+        
+       
+        {
+            tag: 'ML/Data Science',
+            image: '../assets/images/disease.png',
+            title: "Parkinson's Disease Progression Prediction",
+            description: "Predicted the progression of Parkinson's Disease by utilizing protein and peptide data measurements from patients provided in a Kaggle Contest. Implemented using Pandas, Seaborn, Scikit-learn and XGBoost",
+            tech: ["Pandas", "Seaborn", "Sklearn", "XGBoost"],
+            links: [
+
+                { link: 'https://www.kaggle.com/code/adityarahul/eda-linearregression', icon: React.createElement(FaKaggle) },
+                // { link: 'https://buttarahul.github.io/currency-converter//', icon: React.createElement(PlayArrowIcon) },
+
+            ]
+        },
+        {
+            tag: 'ML/Data Science',
+            image: '../assets/images/bird.png',
+            title: "EDA BirdCLEF",
+            description: "Exploratory data analysis (EDA) of audio sounds of different species of birds Implemented using torchaudio, seaborn and librosa",
+            tech:["torchaudio", "Seaborn", "librosa"],
+            links: [
+
+                { link: 'https://www.kaggle.com/code/adityarahul/edabirdclef', icon: React.createElement(FaKaggle) },
+                // { link: 'https://buttarahul.github.io/currency-converter//', icon: React.createElement(PlayArrowIcon) },
+
+            ]
+        },
+        {
+            tag: 'ML/Data Science',
+            image: '../assets/images/movie.png',
+            title: "Movie Genre Classification",
+            description: "Text Classification problem where I used movie plot summaries to predict movie genres. Implemente using Spacy, NLTK and scikit-learn" ,
+            tech:["torchaudio", "Seaborn", "librosa"],
+            links: [
+
+                { link: 'https://www.kaggle.com/code/adityarahul/movie-genre-classification', icon: React.createElement(FaKaggle) },
+                // { link: 'https://buttarahul.github.io/currency-converter//', icon: React.createElement(PlayArrowIcon) },
+
+            ]
+        },
+        {
+            tag: 'ML/Data Science',
+            image: '../assets/images/disaster.jpg',
+            title: "Fake Disaster Tweet Detection",
+            description: "A NLP approach to classify a tweet as a Real or Fake Disaster Tweet. Implemented using NLTK and scikit-learn",
+            tech: ["NLTK", "Scikit-learn"],
+            links: [
+
+                { link: 'https://www.kaggle.com/code/adityarahul/disaster-tweets-prediction-using-nlp', icon: React.createElement(FaKaggle) },
+                // { link: 'https://buttarahul.github.io/currency-converter//', icon: React.createElement(PlayArrowIcon) },
+
+            ]
+        },
         {
             tag: 'C++',
             image: '../assets/images/sys.png',
@@ -342,59 +423,6 @@ export default {
             links: [
 
                 { link: 'https://github.com/buttaRahul/Ticket-booking-system', icon: React.createElement(GitHubIcon) },
-                // { link: 'https://buttarahul.github.io/currency-converter//', icon: React.createElement(PlayArrowIcon) },
-
-            ]
-        },
-       
-        {
-            tag: 'ML/Data Science',
-            image: '../assets/images/disease.png',
-            title: "Parkinson's Disease Progression Prediction",
-            description: "Predicted the progression of Parkinson's Disease by utilizing protein and peptide data measurements from patients provided in a Kaggle Contest. Implemented using Pandas, Seaborn, Scikit-learn and XGBoost",
-            tech: ["Pandas", "Seaborn", "Sklearn", "XGBoost"],
-            links: [
-
-                { link: 'https://www.kaggle.com/code/adityarahul/eda-linearregression', icon: React.createElement(GitHubIcon) },
-                // { link: 'https://buttarahul.github.io/currency-converter//', icon: React.createElement(PlayArrowIcon) },
-
-            ]
-        },
-        {
-            tag: 'ML/Data Science',
-            image: '../assets/images/bird.png',
-            title: "EDA BirdCLEF",
-            description: "Exploratory data analysis (EDA) of audio sounds of different species of birds Implemented using torchaudio, seaborn and librosa",
-            tech:["torchaudio", "Seaborn", "librosa"],
-            links: [
-
-                { link: 'https://www.kaggle.com/code/adityarahul/edabirdclef', icon: React.createElement(GitHubIcon) },
-                // { link: 'https://buttarahul.github.io/currency-converter//', icon: React.createElement(PlayArrowIcon) },
-
-            ]
-        },
-        {
-            tag: 'ML/Data Science',
-            image: '../assets/images/movie.png',
-            title: "Movie Genre Classification",
-            description: "Text Classification problem where I used movie plot summaries to predict movie genres. Implemente using Spacy, NLTK and scikit-learn" ,
-            tech:["torchaudio", "Seaborn", "librosa"],
-            links: [
-
-                { link: 'https://www.kaggle.com/code/adityarahul/movie-genre-classification', icon: React.createElement(GitHubIcon) },
-                // { link: 'https://buttarahul.github.io/currency-converter//', icon: React.createElement(PlayArrowIcon) },
-
-            ]
-        },
-        {
-            tag: 'ML/Data Science',
-            image: '../assets/images/disaster.jpg',
-            title: "Fake Disaster Tweet Detection",
-            description: "A NLP approach to classify a tweet as a Real or Fake Disaster Tweet. Implemented using NLTK and scikit-learn",
-            tech: ["NLTK", "Scikit-learn"],
-            links: [
-
-                { link: 'https://www.kaggle.com/code/adityarahul/disaster-tweets-prediction-using-nlp', icon: React.createElement(GitHubIcon) },
                 // { link: 'https://buttarahul.github.io/currency-converter//', icon: React.createElement(PlayArrowIcon) },
 
             ]

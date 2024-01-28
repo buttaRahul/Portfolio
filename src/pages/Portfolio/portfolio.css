@@ -39,7 +39,6 @@
 
 .customCard .customCard_image {
     /* height: 120px; */
-    /* width:400px ; */
     
     object-fit: contain !important;
 
@@ -89,7 +88,7 @@
 .projectDialog  .projectDialog_image{
     max-height: 300px;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center center !important;
 }
 .projectDialog  .projectDialog_description{
