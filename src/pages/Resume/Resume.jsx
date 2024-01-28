@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './resume.css'
 import { Alert, Box, Card, Grid, Paper, Snackbar, TextField, Typography } from '@mui/material'
 import resumeData from '../../utils/resumeData'
@@ -13,6 +13,7 @@ import MuiAlert from '@mui/material/Alert';
 
 import { TimelineContent, TimelineDot, TimelineItem } from '@mui/lab'
 import CustomButton from '../../components/Button/CustomButton'
+import { useLocation } from 'react-router-dom'
 
 
 
@@ -20,9 +21,6 @@ import CustomButton from '../../components/Button/CustomButton'
 const Resume = () => {
 
   // console.log(import.meta.env.VITE_API_KEY)
-
-
-
   const [name,setName] =  useState("")
   const [email,setEmail] =  useState("")
   const [message,setMessage] =  useState("")

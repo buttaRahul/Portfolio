@@ -8,6 +8,7 @@ import { motion, useMotionValue, useTransform } from "framer-motion";
 
 
 const Portfolio = () => {
+  
 
   const [tabvalue, setTabValue] = useState('All')
   const [prjDialog, setPrjDialog] = useState(false)
@@ -16,8 +17,6 @@ const Portfolio = () => {
   const cardY = useMotionValue(0);
   const rotateX = useTransform(cardY, [-300, 300], [10, -10]); // Reversed values
   const rotateY = useTransform(cardX, [-300, 300], [-10, 10]); // Reversed values
-  const cardRotateX = useTransform(cardY, [-300, 300], [25, -25]); // Adjusted rotation values
-  const cardRotateY = useTransform(cardX, [-300, 300], [-25, 25]); // Adjusted rotation values
 
 
   const handleMouseMove = (event, prj) => {

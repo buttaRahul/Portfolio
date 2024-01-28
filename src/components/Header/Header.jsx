@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav, Navbar } from 'react-bootstrap';
 // import { Link, NavLink } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import { NavLink, useLocation } from "react-router-dom"
 import { HomeRounded, Telegram } from '@mui/icons-material';
 import { Box } from '@mui/material';
@@ -10,14 +11,21 @@ import CustomButton from '../Button/CustomButton';
 import './header.css'
 
 const Header = (props) => {
+  const navigateTo = useNavigate();
 
   const pathName = useLocation().pathname;
-  const scrollToContact = () => {
-    const contactElement = document.getElementById('contact');
-    if (contactElement) {
-      contactElement.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handleClick = () => {
+    console.log("Contact Me button clicked");
+    navigateTo('/', { scrollOptions: { behavior: 'smooth', block: 'start' } });
+    setTimeout(() => {
+      const contactElement = document.getElementById('contact');
+      if (contactElement) {
+        contactElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
   };
+
+  
   return (
     <Navbar expand="lg" sticky="top" className="header">
       <Nav.Link as={NavLink} to='/' className='header_navlink'>
@@ -28,8 +36,6 @@ const Header = (props) => {
       <Navbar.Toggle/> 
       <Navbar.Collapse>
         <Nav className='header_left'>
-          {/* <NavLink to='/' className = {pathName == "/" ? "header_link_active" : "header_link"}>Resume</NavLink> */}
-          {/* <NavLink as={NavLink} to='/portfolio' className = {pathName == "/portfolio" ? "header_link_active" : "header_link"}>Portfolio</NavLink> */}
           <Nav.Link as={NavLink} to='/' className = {pathName == "/" ? "header_link_active" : "header_link"}>Resume</Nav.Link>
           <Nav.Link as={NavLink} to='/portfolio' className = {pathName == "/portfolio" ? "header_link_active" : "header_link"}>Portfolio</Nav.Link>
         </Nav>
@@ -43,7 +49,7 @@ const Header = (props) => {
             
                
         </Box>
-            <CustomButton text={'Contact Me'} icon={<Telegram/>} onClick={scrollToContact} />
+            <CustomButton text={'Contact Me'} icon={<Telegram/>} onClick={handleClick} />
       </Navbar.Collapse>
     </Navbar>
       
