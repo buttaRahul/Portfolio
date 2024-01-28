@@ -40,8 +40,8 @@ const Profile = () => {
 
   const handleDownloadCv = () => {
     const downloadLink = document.createElement('a');
-    downloadLink.href = '../../../public/assets/resume/Butta-Rahul-Aditya-FlowCV-Resume-20231209.pdf';
-    downloadLink.download = 'Butta-Rahul-Aditya-FlowCV-Resume-20231209.pdf';
+    downloadLink.href = '/assets/resume/Butta-Rahul-Aditya-FlowCV-Resume-20231209.pdf';
+    downloadLink.download = 'mixedroles.pdf';
     downloadLink.click();
   };
 
