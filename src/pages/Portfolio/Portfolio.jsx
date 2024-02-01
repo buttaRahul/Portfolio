@@ -108,7 +108,7 @@ const Portfolio = () => {
                               key="card"
                               style={{
                                 boxShadow: "0px 0px 30px -7px rgba(0,0,0,0.90)",
-                                backgroundColor:'lightblue',
+                                backgroundColor:'black',
                                 borderRadius: 10,
                                 width: '400px',
                                 transformStyle: "preserve-3d",
@@ -119,10 +119,10 @@ const Portfolio = () => {
                               transition={{ velocity: 0 }}
                             >
 
+                              <Typography variant='body2' className='customCard_title'>{prj.title}</Typography>
                               <CardMedia className='customCard_image' component="img"
                                 height="194"
                                 image={prj.image} />
-                              <Typography variant='body2' className='customCard_title'>{prj.title}</Typography>
                               {/* <Typography variant='body2' className='customCard_caption'>{prj.caption}</Typography> */}
                               <Box className='customCard_tags'>
                               {
@@ -152,7 +152,7 @@ const Portfolio = () => {
       </Grid>
 
       <Dialog maxWidth={'lg'} fullWidth open={prjDialog} onClose={() => setPrjDialog(false)} className='projectDialog' >
-        <DialogTitle onClose={() => setPrjDialog(false)} >{prjDialog.title}</DialogTitle>
+        <DialogTitle className='title' onClose={() => setPrjDialog(false)} >{prjDialog.title}</DialogTitle>
         <img src={prjDialog.image} alt='' className='projectDialog_image' />
         <DialogContent>
           <Typography className='projectDialog_description'>

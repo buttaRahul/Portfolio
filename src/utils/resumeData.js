@@ -241,6 +241,19 @@ export default {
             ]
         },
         {
+            tag: 'Web Apps',
+            image: '../assets/images/tic.png',
+            title: 'Tic-Tac-Toe',
+            description: 'A tictactoe game using react. Implemted using ReactJs and Javascript',
+            tech: ["ReactJs", "Javascript"],
+            links: [
+
+                { link: 'https://github.com/buttaRahul/tictactoe', icon: React.createElement(GitHubIcon) },
+                // { link: 'https://buttarahul.github.io/currency-converter//', icon: React.createElement(PlayArrowIcon) },
+
+            ]
+        },
+        {
             tag: 'ML/Data Science',
             image: '../assets/images/query.png',
             title: 'Query Assist',
@@ -321,19 +334,7 @@ export default {
 
             ]
         },
-        {
-            tag: 'ML/Data Science',
-            image: '../assets/images/tic.png',
-            title: 'Tic-Tac-Toe',
-            description: 'A tictactoe game using react. Implemted using ReactJs and Javascript',
-            tech: ["ReactJs", "Javascript"],
-            links: [
-
-                { link: 'https://github.com/buttaRahul/tictactoe', icon: React.createElement(GitHubIcon) },
-                // { link: 'https://buttarahul.github.io/currency-converter//', icon: React.createElement(PlayArrowIcon) },
-
-            ]
-        },
+        
         {
             tag: 'ML/Data Science',
             image: '../assets/images/lab.jpg',

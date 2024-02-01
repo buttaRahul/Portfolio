@@ -30,7 +30,7 @@
     border-radius: 5px;
     overflow: hidden;
     /* height: ; */
-
+    /* padding: 40px; */
 }
 
 
@@ -40,23 +40,21 @@
 .customCard .customCard_image {
     /* height: 120px; */
     
-    object-fit: contain !important;
-
+    object-fit: cover !important;
+    border-radius: 20px ;
+    padding: 10px;
 
 }
 
 
 .customCard .customCard_title {
     font-weight: 600 !important;
-    padding: 20px;
+    color: white;
+    padding: 15px;
 }
 
 
-.customCard .customCard_caption {
-    color: white !important;
-    font-weight: 300;
-    padding: 20px;
-}
+
 
 .customCard .customCard_tag{
     /* border: 5px solid black !important; */
@@ -64,16 +62,19 @@
     /* border: 10px;
      */
     border-radius: 10px;
-    padding: 10px;
+    /* padding: 10px; */
+    padding: 5px;
     color: white;
 
 }
 
 .customCard .customCard_tags{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 5px;
     margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 5px;
 }
 
 .projectDialog {
@@ -83,7 +84,12 @@
     max-width: 800px;
     height: 100vh; 
     overflow-y: auto;  
-    margin: 0 auto;  
+    margin: 0 auto;
+}
+
+.projectDialog .title{
+    font-weight: 600;
+    /* color: white */
 }
 .projectDialog  .projectDialog_image{
     max-height: 300px;
